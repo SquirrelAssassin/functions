@@ -1,0 +1,26 @@
+{
+  "bindings": [
+    {
+      "authLevel": "anonymous",
+      "name": "input",
+      "type": "httpTrigger",
+      "direction": "in",
+      "methods": [
+        "post"
+      ]
+    },
+    {
+      "name": "return",
+      "type": "http",
+      "direction": "out"
+    },
+    {
+      "type": "blob",
+      "name": "blobDirectory",
+      "path": "{ContainerName}",
+      "connection": "wakastorageforfunctions_STORAGE",
+      "direction": "in"
+    }
+  ],
+  "disabled": false
+}
